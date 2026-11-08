@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FavoritePlace</title>
+    <style>
+        img { max-width: 100%; height: auto; display: block; }
+    </style>
+</head>
+<body>
+    <h1>Arayat</h1>
+    <p>Mount Arayat is a 1,026-meter isolated stratovolcano in Pampanga, Philippines, known for it's symmetrical cone, forested slopes, mythological significance, and status as one of the country's oldest national parks.</p>
+    
+    <section>
+    <h2>1. Format Switching</h2>
+    <picture>
+      <source srcset="images/banner.avif" type="image/avif">
+      <source srcset="images/banner.webp" type="image/webp">
+      <img src="images/banner.jpg" 
+           alt="Arayat" 
+           width="1200" 
+           height="600">
+    </picture> 
+    </section>
+    
+    <section>
+    <h2>2. Resolution Switching</h2>
+    <img src="images/Arayat-scaled.jpg" 
+         srcset="images/place-400.jpg 400w, 
+                 images/place-800.jpg 800w, 
+                 images/place-1600.jpg 1600w" 
+         sizes="(max-width: 600px) 100vw,
+                50vw"
+         alt="Arayat" 
+         width="1600" 
+         height="1067">
+    </section>
+
+    <section>
+        <h2>3. Arc Direction</h2>
+        <picture>
+            <source media="(max-width: 600px)"
+                    srcset="images/hero-square.avif"
+                    type="image/avif">
+
+            <source srcset="images/hero-wide.avif"
+                    type="image/avif">
+            <source srcset="images/hero-wide.webp"
+                    type="image/webp">
+            
+            <img src="images/hero-wide.jpg"
+                 alt="Arayat"
+                 width="1600"
+                 height="700">
+        </picture>
+    </section>
+
+</body>
+</html>
